@@ -2,3 +2,4 @@ tests/out/
 tests/signals/
 __pycache__/
 .DS_Store
+tests/orig_fix.jsfx
