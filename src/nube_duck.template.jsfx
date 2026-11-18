@@ -999,9 +999,9 @@ _on = par(sel, 0) == 1;
 _fo = par(sel, 1);
 _y = py + 34 * SC; _h = 26 * SC; _x = 14 * SC;
 button(20, _x, _y, 92 * SC, _h, _on ? "Encendida" : "Apagada", _on, sel); _x += 98 * SC;
-dropdown(21, _x, _y, 196 * SC, _h, "Forma", forma_name(_fo), 1); _x += 202 * SC;
+dropdown(21, _x, _y, 180 * SC, _h, "Forma", forma_name(_fo), 1); _x += 186 * SC;
 dropdown(22, _x, _y, 160 * SC, _h, "Canal", chan_name(par(sel, 4)), 1); _x += 166 * SC;
-dropdown(23, _x, _y, 210 * SC, _h, "Modo", par(sel, 5) == 0 ? "Competencia" : "Solo voz", 1); _x += 216 * SC;
+dropdown(23, _x, _y, 170 * SC, _h, "Modo", par(sel, 5) == 0 ? "Competencia" : "Solo voz", 1); _x += 176 * SC;
 dropdown(24, _x, _y, 160 * SC, _h, "Voz", vozen_name(par(sel, 12)), 1); _x += 166 * SC;
 _x + 130 * SC < WW ? (
   button(25, _x, _y, 56 * SC, _h, "Solo", slider4 == sel + 1, -1); _x += 62 * SC;

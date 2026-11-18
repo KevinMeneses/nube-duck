@@ -131,7 +131,14 @@ Para guardar los tuyos usa el botón **+** de la ventana del FX.
     bit a bit, el preset 1 contra el original corregido (idéntico, también en 20 s del instrumental y la voz reales
     de *Nube baja*) y la reducción en régimen contra la fórmula (±0.05 dB). También informa que el original tal cual
     no hace nada.
-  - `perf.lua`: CPU. `ui_demo.lua` / `ui_close.lua`: demo con la ventana abierta.
+  - `perf.lua`: CPU. `ui_demo.lua` / `ui_close.lua` / `reopen.sh [preset]`: demo con la ventana abierta.
+  - `ui_test.py` (+ `ui.py`, `ui_dump.lua`, `winid.swift`, `scroll.swift`): 49 pruebas con el mouse (`cliclick`)
+    que leen el parámetro real en REAPER después de cada acción: los 4 menús de banda, arrastrar / rueda / doble clic
+    en perillas, Reiniciar, arrastrar bordes y cuerpo de una banda en la gráfica, rueda = ancho, doble clic en vacío,
+    Alt+clic, chips, Encendida, Solo, Escuchar, Mezcla, Salida, Escala, Analizador, menú de clic derecho y presets.
+    Uso: `tests/reopen.sh 21 && python3 tests/ui_test.py` (mueve el mouse de verdad: no usar la Mac mientras corre).
+    La posición de la ventana se lee sola. Clics como presiones de ~120 ms y mover antes de apretar: con REAPER
+    reproduciendo se pierden los clics demasiado cortos.
 
 ## Detalles técnicos
 
