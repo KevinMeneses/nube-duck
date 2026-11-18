@@ -1,0 +1,4 @@
+tests/out/
+tests/signals/
+__pycache__/
+.DS_Store
